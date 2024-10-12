@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.6">
+
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="330dp"
+                android:layout_height="230dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/tigre" />
+
+        </RelativeLayout>
+
+
+        <ScrollView
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.4"
+            android:fillViewport="true">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="@dimen/padding_horizontal_login">
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/editTextColorWhite"
+                    android:textColorHint="@color/editTextColorWhite"
+                    app:boxStrokeColor="@color/editTextColorWhite">
+
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/username"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/hint_username"
+                        android:textColor="@color/editTextColorWhite"
+                        android:textColorHint="@color/editTextColorWhite"
+                        android:textSize="20sp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:textColor="@color/editTextColorWhite"
+                    android:textColorHint="@color/editTextColorWhite"
+                    app:boxStrokeColor="@color/editTextColorWhite">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/password"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/hint_password"
+                        android:textColor="@color/editTextColorWhite"
+                        android:textColorHint="@color/editTextColorWhite"
+                        android:textSize="20sp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <Button
+                    android:id="@+id/loginGoogle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="loginWithGoogle"
+                    android:text="Login with Google"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:drawableEnd="@drawable/icn_gogl"
+                    android:theme="@style/RaisedButtonDark" />
+
+                <Button
+                    android:id="@+id/loginFacebook"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="loginWithFacebook"
+                    android:text="Login with Facebook"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:drawableEnd="@drawable/icn_face"
+                    android:theme="@style/RaisedButtonDark" />
+
+                <Button
+
+                    android:id="@+id/login"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="goContainer"
+                    android:text="@string/text_btnlogin"
+                    android:theme="@style/RaisedButtonDark" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/dontHaveAccount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/dont_have_account"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/textSize_dont_have_account"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:id="@+id/createHere"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/dontHaveAccount"
+                        android:onClick="goCreateAccount"
+                        android:text="@string/create_here"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/textSize_dont_have_account"
+                        android:textStyle="bold" />
+
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
