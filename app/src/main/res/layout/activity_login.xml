@@ -53,22 +53,18 @@
 
 
                     <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/username"
+                        android:id="@+id/email"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:hint="@string/hint_username"
-                        android:textColor="@color/editTextColorWhite"
-                        android:textColorHint="@color/editTextColorWhite"
-                        android:textSize="20sp" />
+                        android:hint="@string/hint_email"
+                        />
 
                 </com.google.android.material.textfield.TextInputLayout>
 
 
                 <com.google.android.material.textfield.TextInputLayout
-
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-
                     android:textColor="@color/editTextColorWhite"
                     android:textColorHint="@color/editTextColorWhite"
                     app:boxStrokeColor="@color/editTextColorWhite">
@@ -78,36 +74,43 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:hint="@string/hint_password"
-                        android:textColor="@color/editTextColorWhite"
-                        android:textColorHint="@color/editTextColorWhite"
-                        android:textSize="20sp" />
+                        android:inputType="textPassword"
+                       />
 
                 </com.google.android.material.textfield.TextInputLayout>
+
+                <ToggleButton
+                    android:id="@+id/toogle_rol"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:textOff="@string/text_client"
+                    android:textOn="@string/text_rep"
+                    android:theme="@style/RaisedButtonDark" />
 
                 <Button
                     android:id="@+id/loginGoogle"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:onClick="loginWithGoogle"
-                    android:text="Login with Google"
-                    android:gravity="center"
-                    android:padding="10dp"
                     android:drawableEnd="@drawable/icn_gogl"
+                    android:gravity="center"
+                    android:onClick="loginWithGoogle"
+                    android:padding="10dp"
+                    android:text="Login with Google"
                     android:theme="@style/RaisedButtonDark" />
 
                 <Button
                     android:id="@+id/loginFacebook"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:onClick="loginWithFacebook"
-                    android:text="Login with Facebook"
-                    android:gravity="center"
-                    android:padding="10dp"
                     android:drawableEnd="@drawable/icn_face"
+                    android:gravity="center"
+                    android:onClick="loginWithFacebook"
+                    android:padding="10dp"
+                    android:text="Login with Facebook"
                     android:theme="@style/RaisedButtonDark" />
 
                 <Button
-
                     android:id="@+id/login"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"

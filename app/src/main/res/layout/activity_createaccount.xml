@@ -10,7 +10,7 @@
     <include layout="@layout/actionbar_toolbar" />
 
     <ScrollView
-
+        android:fillViewport="true"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layout_behavior="@string/appbar_scrolling_view_behavior">
@@ -36,9 +36,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="@string/hint_email"
-                    android:textColor="@color/editTextColorBlack"
-                    android:textColorHint="@color/editTextColorBlack"
-                    android:textSize="20sp" />
+                    />
 
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -57,31 +55,11 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="@string/hint_username"
-                    android:textColor="@color/editTextColorBlack"
-                    android:textColorHint="@color/editTextColorBlack"
-                    android:textSize="20sp" />
+                    />
 
             </com.google.android.material.textfield.TextInputLayout>
 
-            <com.google.android.material.textfield.TextInputLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/editText_margin_create_Account"
-                android:textColor="@color/editTextColorBlack"
-                android:textColorHint="@color/editTextColorBlack"
-                app:boxStrokeColor="@color/editTextColorBlack">
 
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/userCreate"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="@string/hint_userCreate"
-                    android:textColor="@color/editTextColorBlack"
-                    android:textColorHint="@color/editTextColorBlack"
-                    android:textSize="20sp" />
-
-            </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
@@ -97,9 +75,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="@string/hint_password"
-                    android:textColor="@color/editTextColorBlack"
-                    android:textColorHint="@color/editTextColorBlack"
-                    android:textSize="20sp" />
+                    />
 
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -117,9 +93,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="@string/hint_confirPassword"
-                    android:textColor="@color/editTextColorBlack"
-                    android:textColorHint="@color/editTextColorBlack"
-                    android:textSize="20sp" />
+                    android:inputType="textPassword"
+                    />
 
             </com.google.android.material.textfield.TextInputLayout>
 

@@ -48,7 +48,6 @@
     <string name="dont_have_account">No tienes Cuenta?</string>
     <string name="create_here">Crea una Aqui</string>
     <string name="hint_email">Email</string>
-    <string name="hint_userCreate">Usuario</string>
     <string name="hint_confirPassword">Confirmar Contraseña</string>
     <string name="text_btnCreateAccount">Registrar</string>
     <string name="toolbar_title_createAccount">Crear Cuenta</string>
@@ -68,4 +67,6 @@
     <string name="likeNumberCard_card1">100 Me Gusta</string>
     <string name="likeNumberCard_card2">90 Me Gusta</string>
     <string name="splash_image">Pizza To Go</string>
+    <string name="text_client">Cliente\n</string>
+    <string name="text_rep">Repartidor</string>
 </resources>

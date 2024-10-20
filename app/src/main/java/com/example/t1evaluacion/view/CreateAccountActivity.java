@@ -27,21 +27,15 @@ public class CreateAccountActivity extends AppCompatActivity {
         });
     }
 
-    private void showToolbar(String title, boolean upButton){
-
+    private void showToolbar(String title, boolean upButton) {
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-
         setSupportActionBar(toolbar);
-
         getSupportActionBar().setTitle(title);
         getSupportActionBar().setDisplayHomeAsUpEnabled(upButton);
 
 
-
     }
-
-
 
 
 }
