@@ -13,10 +13,8 @@ import com.example.t1evaluacion.R;
 import com.example.t1evaluacion.view.fragments.HomeFragment;
 import com.example.t1evaluacion.view.fragments.ProfileFragment;
 import com.example.t1evaluacion.view.fragments.SearchFragment;
-import com.google.android.material.bottomnavigation.BottomNavigationMenuView;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
-import java.net.BindException;
 
 public class ContainerActivity extends AppCompatActivity {
 
@@ -29,13 +27,14 @@ public class ContainerActivity extends AppCompatActivity {
 
         BottomNavigationView bottombar = findViewById(R.id.bottombar);
 
-        bottombar.getMenu().getItem(0).setChecked(true);
 
-        if ( bottombar.getMenu().getItem(0).isChecked()  ){
+        bottombar.getMenu().getItem(1).setChecked(true);
+
+        if (bottombar.getMenu().getItem(1).isChecked()) {
 
             HomeFragment homeFragment = new HomeFragment();
             getSupportFragmentManager().beginTransaction()
-                    .replace(R.id.container , homeFragment)
+                    .replace(R.id.container, homeFragment)
                     .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE)
                     .addToBackStack(null).commit();
 
@@ -44,18 +43,18 @@ public class ContainerActivity extends AppCompatActivity {
 
         bottombar.setOnItemSelectedListener(item -> {
 
-            switch (item.getItemId()){
+            switch (item.getItemId()) {
                 case R.id.tab_home:
                     HomeFragment homeFragment = new HomeFragment();
                     getSupportFragmentManager().beginTransaction()
-                            .replace(R.id.container , homeFragment)
+                            .replace(R.id.container, homeFragment)
                             .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE)
                             .addToBackStack(null).commit();
                     break;
                 case R.id.tab_profile:
                     ProfileFragment profileFragment = new ProfileFragment();
                     getSupportFragmentManager().beginTransaction()
-                            .replace(R.id.container , profileFragment)
+                            .replace(R.id.container, profileFragment)
                             .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE)
                             .addToBackStack(null).commit();
                     break;
@@ -70,7 +69,7 @@ public class ContainerActivity extends AppCompatActivity {
             }
             return true;
 
-        } );
+        });
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());

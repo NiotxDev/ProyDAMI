@@ -48,7 +48,6 @@
     <string name="dont_have_account">No tienes Cuenta?</string>
     <string name="create_here">Crea una Aqui</string>
     <string name="hint_email">Email</string>
-    <string name="hint_userCreate">Usuario</string>
     <string name="hint_confirPassword">Confirmar Contraseña</string>
     <string name="text_btnCreateAccount">Registrar</string>
     <string name="toolbar_title_createAccount">Crear Cuenta</string>
@@ -67,4 +66,11 @@
     <string name="timecard_card2">3 horas</string>
     <string name="likeNumberCard_card1">100 Me Gusta</string>
     <string name="likeNumberCard_card2">90 Me Gusta</string>
+    <string name="splash_image">Pizza To Go</string>
+    <string name="text_client">Cliente\n</string>
+    <string name="text_rep">Repartidor</string>
+    <string name="banner_description">El sabor que une a todos</string>
+    <string name="text_mision">Nuestra misión es ofrecer las mejores pizzas y hamburguesas, combinando calidad y sabor en cada producto para satisfacer el paladar de nuestros clientes.</string>
+    <string name="text_vision">Convertirnos en el lugar de referencia para todos los amantes de las pizzas y hamburguesas, destacando por nuestra innovación y compromiso con la calidad.</string>
+    <string name="text_contacto">Teléfonos: +51 971 546 629, +51 987 331 895</string>
 </resources>

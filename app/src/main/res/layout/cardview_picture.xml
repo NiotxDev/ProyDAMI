@@ -15,7 +15,7 @@
             android:id="@+id/pictureCard"
             android:layout_width="match_parent"
             android:layout_height="@dimen/height_cardview"
-            android:background="@drawable/pizzeria1"
+            android:background="@drawable/logocarg_cardview"
             android:scaleType="centerCrop" />
 
         <LinearLayout
