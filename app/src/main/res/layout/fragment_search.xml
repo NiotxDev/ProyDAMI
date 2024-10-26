@@ -18,6 +18,24 @@
 
         <!--        <include layout="@layout/cardview_picture" />-->
 
+        <!-- Cuadro de búsqueda -->
+        <EditText
+            android:id="@+id/search_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Buscar aquí"
+            android:padding="8dp"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Botón de filtro -->
+        <Button
+            android:id="@+id/filter_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Filtrar"
+            android:layout_gravity="end"
+            android:layout_marginBottom="8dp"/>
+
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/pictureRecyclerView"
             android:layout_width="match_parent"

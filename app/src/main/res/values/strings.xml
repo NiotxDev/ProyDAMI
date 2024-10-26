@@ -69,4 +69,8 @@
     <string name="splash_image">Pizza To Go</string>
     <string name="text_client">Cliente\n</string>
     <string name="text_rep">Repartidor</string>
+    <string name="banner_description">El sabor que une a todos</string>
+    <string name="text_mision">Nuestra misión es ofrecer las mejores pizzas y hamburguesas, combinando calidad y sabor en cada producto para satisfacer el paladar de nuestros clientes.</string>
+    <string name="text_vision">Convertirnos en el lugar de referencia para todos los amantes de las pizzas y hamburguesas, destacando por nuestra innovación y compromiso con la calidad.</string>
+    <string name="text_contacto">Teléfonos: +51 971 546 629, +51 987 331 895</string>
 </resources>

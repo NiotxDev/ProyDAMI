@@ -114,6 +114,13 @@ public class SearchFragment extends Fragment {
         pictures.add(new Picture("https://assets.unileversolutions.com/recipes-v2/217210.jpg",
                 "Pizza Suprema", "15-18 minutos", "9.2/10 Me Gusta"));
 
+        pictures.add(new Picture("https://jptradingimports.com/wp-content/uploads/2020/07/pizza-mediterranea.png.webp",
+                "Pizza Mediterránea", "10-13 minutos", "8.7/10 Me Gusta"));
+
+        pictures.add(new Picture("https://imag.bonviveur.com/pizza-margarita.jpg",
+                "Pizza Margherita", "10-15 minutos", "9.1/10 Me Gusta"));
+
+
         //HAMBURGESAS
 
         pictures.add(new Picture("https://assets.unileversolutions.com/recipes-v2/218401.jpg",
@@ -139,6 +146,13 @@ public class SearchFragment extends Fragment {
 
         pictures.add(new Picture("https://www.conasi.eu/blog/wp-content/uploads/2022/05/hamburguesa-vegana-d.jpg",
                 "Hamburguesa Vegana", "5-7 minutos", "8/10 Me Gusta"));
+
+        pictures.add(new Picture("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQboW6yB3u96wO8AUL3PdB-WpvQ_dY29mNYFwkit6VNPX7tPjY07xchqlx4rOHVVmCDMJU&usqp=CAU",
+                "Hamburguesa Gourmet", "8-10 minutos", "9.3/10 Me Gusta"));
+
+        pictures.add(new Picture("https://ik.imagekit.io/smithfield/farmerjohn/3b1720e5-a9aa-0088-f165-1043ab81f774/4a8e8be6-5c83-4042-b1bd-50bb8ad3567a/Bacon-BBQ-Burger_B_Web_400x250.jpg?tr=w-1160,c-at_max,f-auto",
+                "Hamburguesa con Tocino", "7-9 minutos", "9.6/10 Me Gusta"));
+
 
         return pictures;
 
