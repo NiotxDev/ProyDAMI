@@ -19,5 +19,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "T1Evaluacion"
+rootProject.name = "ProyDAMI"
 include(":app")
