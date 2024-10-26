@@ -69,52 +69,10 @@ public class HomeFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_home, container, false);
-        showToolbar("Home", false, view);
 
-        RecyclerView pictureRecycler = (RecyclerView) view.findViewById(R.id.pictureRecyclerView);
+        // Inflate the layout for this fragment
+        return inflater.inflate(R.layout.fragment_home, container, false);
 
-        LinearLayoutManager linerLayoutManager = new LinearLayoutManager(getContext());
-        linerLayoutManager.setOrientation(LinearLayoutManager.VERTICAL);
-        pictureRecycler.setLayoutManager(linerLayoutManager);
-        PictureAdapterRecyclerView pictureAdapterRecyclerView =
-                new PictureAdapterRecyclerView(buildPictures(), R.layout.cardview_picture, getActivity());
-
-        pictureRecycler.setAdapter(pictureAdapterRecyclerView);
-        return view;
-    }
-
-    public ArrayList<Picture> buildPictures() {
-        ArrayList<Picture> pictures = new ArrayList<>();
-
-        pictures.add(new Picture("https://www.bareinternational.cl/wp-content/uploads/sites/4/2022/04/Untitled-design-2-300x200.png",
-                "Pizza Pepperoni", "10-12 minutos", "9.5/10 Me Gusta"));
-
-        pictures.add(new Picture("https://www.lavanguardia.com/files/og_thumbnail/files/fp/uploads/2021/03/30/6063031b90a87.r_d.1083-871-0.jpeg",
-                "Pizza Cuatro Quesos", "10-12 minutos.", "8.5/10 Me Gusta"));
-
-        pictures.add(new Picture("https://www.recetasdesbieta.com/wp-content/uploads/2018/09/Como-hacer-pizza-casera-rapida-con-masa-de-pizza-sin-repos-1.jpg",
-                "Pizza Napolitana", "10-12 minutos.", "7/10 Me Gusta"));
-
-        pictures.add(new Picture("https://myplate-prod.azureedge.us/sites/default/files/styles/recipe_525_x_350_/public/2022-08/QuickAndEasyPizza_527x323.jpg?itok=MR3STXhe",
-                "Pizza Diávola", "12-14 minutos.", "8/10 Me Gusta"));
-
-        pictures.add(new Picture("https://s3-eu-west-1.amazonaws.com/verema/images/valoraciones/0011/7628/Pizza-Margarita.png?1366124625",
-                "Pizza Barbacoa", "12-15 minutos.", "9/10 Me Gusta"));
-
-        pictures.add(new Picture("https://media.scoolinary.app/blog/images/2021/04/pizza-napolitana-scooinary.jpg",
-                "Pizza Hawaiana", "10-13 minutos.", "7/10 Me Gusta"));
-
-        return pictures;
-
-    }
-
-    private void showToolbar(String title, boolean upButton, View view) {
-
-        Toolbar toolbar = (Toolbar) view.findViewById(R.id.toolbar);
-        ((AppCompatActivity) getActivity()).setSupportActionBar(toolbar);
-        ((AppCompatActivity) getActivity()).getSupportActionBar().setTitle(title);
-        ((AppCompatActivity) getActivity()).getSupportActionBar().setDisplayHomeAsUpEnabled(upButton);
     }
 
 }

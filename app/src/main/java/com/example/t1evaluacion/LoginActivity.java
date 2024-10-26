@@ -47,39 +47,48 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     //METODO PARA IR A LA PANTALLA PRINCIPAL
+
+    //LOGIN
+public void goLoginAccount(View view){
+
+    String email = emailField.getText().toString();
+    String password = passwordField.getText().toString();
+    boolean isClient = toggleRol.isChecked(); //SI ESTA ACTIVADO SIGNIFICA QUE EL USUARIO ES EL CLIENTE
+
+    //SIMULACION DE VALIDACION DE CREDENCIALES
+
+    if (email.equals("D.antoni02@gmail.com") && password.equals("1234") && !isClient) {
+        // Mostrar mensaje de éxito y redirigir al repartidor
+        Toast.makeText(this, "Iniciaste sesión como Repartidor", Toast.LENGTH_SHORT).show();
+        // Aquí se llama a `goContainer` para ir al ContainerActivity.
+        goContainer(view);
+
+    } else if (email.equals("J.añazco01@gmail.com") && password.equals("1234") && isClient) {
+        // Mostrar mensaje de éxito y redirigir al cliente
+        Toast.makeText(this, "Iniciaste sesión como Cliente", Toast.LENGTH_SHORT).show();
+        goContainer(view);
+
+    } else {
+        // Mostrar mensaje de error si las credenciales no son correctas
+        Toast.makeText(this, "Por Favor, Crear Cuenta", Toast.LENGTH_SHORT).show();
+    }
+
+}
+
+
+    //CREATE ACCOUNT
     public void goCreateAccount(View view) {
 
-        String email = emailField.getText().toString();
-        String password = passwordField.getText().toString();
-        boolean isClient = toggleRol.isChecked(); //SI ESTA ACTIVADO SIGNIFICA QUE EL USUARIO ES EL CLIENTE
-
-        //SIMULACION DE VALIDACION DE CREDENCIALES
-
-        if (email.equals("beny0123@gmail.com") && password.equals("1234") && !isClient) {
-            // Ir a la actividad del cliente (ContainerActivity)
-            Intent intent = new Intent(this, ContainerActivity.class);
-            startActivity(intent);
-            Toast.makeText(this, "Iniciaste sesión como Repartidor", Toast.LENGTH_SHORT).show();
-
-        } else if (email.equals("Antony1234@example.com") && password.equals("1234") && isClient) {
-            // Ir a la actividad del repartidor (puedes cambiarlo si hay una actividad diferente para repartidores)
-            Intent intent = new Intent(this, ContainerActivity.class);
-            startActivity(intent);
-            Toast.makeText(this, "Iniciaste sesión como Cliente", Toast.LENGTH_SHORT).show();
-
-        } else {
-            // Mostrar mensaje de error si las credenciales no son correctas
-            Toast.makeText(this, "Credenciales incorrectas", Toast.LENGTH_SHORT).show();
-        }
-
-
+        // Redirigir a la actividad de creación de cuenta
         Intent intent = new Intent(this, CreateAccountActivity.class);
         startActivity(intent);
 
     }
 
+    //CONTAINER
     public void goContainer(View view) {
 
+        // Lógica para redirigir a ContainerActivity
         Intent intent = new Intent(this, ContainerActivity.class);
         startActivity(intent);
 

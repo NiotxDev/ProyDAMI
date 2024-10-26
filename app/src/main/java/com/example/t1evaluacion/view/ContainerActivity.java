@@ -27,9 +27,10 @@ public class ContainerActivity extends AppCompatActivity {
 
         BottomNavigationView bottombar = findViewById(R.id.bottombar);
 
-        bottombar.getMenu().getItem(0).setChecked(true);
 
-        if (bottombar.getMenu().getItem(0).isChecked()) {
+        bottombar.getMenu().getItem(1).setChecked(true);
+
+        if (bottombar.getMenu().getItem(1).isChecked()) {
 
             HomeFragment homeFragment = new HomeFragment();
             getSupportFragmentManager().beginTransaction()
